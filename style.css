@@ -116,8 +116,7 @@ input {
 }
 
 input:focus {
-  background-color: #596D48;
-  color: white;
+  outline-color: #596D48;
 }
 
 .button {
