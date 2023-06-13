@@ -10,13 +10,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vh;
 }
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgb(246, 242, 242);
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .left-side {
   background: url(img/halie-west-25xggax4bSA-unsplash.jpg) center;
@@ -32,40 +37,125 @@ body {
 
 .logo {
   width: 40vw;
-  height: 170px;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.527);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 230px;
-  padding-right: 260px;
-  font-size: 60px;
+  font-size: 38px;
   color: white;
-  margin-top: 200px;
+  margin-top: 100px;
   font-family: "Norse-Bold";
 }
 
+.logo img {
+  width: 90px;
+  padding: 5px;
+}
+
 .photo-credit {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   color: white;
+  padding-bottom: 5px;
 }
 
 .photo-credit a {
   color: white;
 }
 
-.logo img {
-  width: 110px;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
 .right-side {
-  margin-left: 60px;
+  width: 60vw;
+}
+
+.head-text {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 30px;
+  width: 80%;
+}
+
+.head-text .bottom-text {
+  margin-top: 30px;
+}
+
+.form-section {
+  background-color: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+#form {
+ display: flex;
+ gap: 20px;
+ flex-wrap: wrap;
+ font-size: 14px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.input {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ width: 300px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 7px;
+  width: 300px;
+}
+
+input:focus {
+  background-color: #596D48;
+  color: white;
+}
+
+.button {
+  margin-left: 30px;
+  margin-top: 35px;
+}
+
+.button button {
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #596D48;
+  color: white;
+}
+
+.button button:hover {
+  background-color: white;
+  color: #596D48;
+}
+
+.login-bottom {
+  margin-top: 30px;
+  display: flex;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.login-bottom a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
+}
+
+.login-bottom a:hover {
+  color: black;
 }
